@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inputs" id="nombreEquipo">
+            <p class="titulo-p">escribe el nombre de los equipos</p>
+            <input type="text" placeholder="nombre del equipo local" id="inputEquipo1">
+            <input type="text" placeholder="nombre del equipo visitante" id="inputEquipo2">
+            <button id="guardarBoton">Guardar</button>
+        </div>
+        <hr>
+        <div class="titulo">
+            <h1 id="h1">MARCADOR DEL PARTIDO</h1>
+        </div>
+        <div class="equipos-wraper" id="equipos-wraper">
+            <div class="uno" id="uno">
+                <div class="equipo1">
+                    <p id="nombre-equipo1"></p>
+                    <div class="resultado-equipo1" id="resultado-equipo1">0</div>
+                </div>
+                <div class="aumentar">
+                    <button class="sumar" id="sumarEquipo1">GOL</button>
+                    <button class="sumar" id="restarEquipo1">Anular gol</button>
+                </div>
+            </div>
+            <hr>
+            <div class="intermedio">
+                <p>VS</p>
+            </div>
+
+            <hr>
+            <div class="dos">
+                <div class="equipo2">
+                    <p id="nombre-equipo2"></p>
+                    <div class="resultado-equipo2" id="resultado-equipo2">0</div>
+                </div>
+                <div class="aumentar">
+                    <button class="sumar" id="sumarEquipo2">GOL</button>
+                    <button class="sumar" id="restarEquipo2">Anular gol</button>
+                </div>
+            </div>
+        </div>
+        <div class="cronometro">
+            <div class="contains">
+                <p id="textTiempo">Minuto:</p>
+            <div id="reloj">00:00:00</div>
+            </div>
+            <button id="iniciarDetenerBtn"><img src="/temporizador.png" alt="" width="16em">Iniciar Cronometro</button>
+        </div>
+        <div id="terminarPartido">
+            <button class="sumar" id="termino">  Termino el partido</button>
+        </div>
+        <div id="otroPartido">
+            <button class="" id="otro">Iniciar otro partido</button>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
